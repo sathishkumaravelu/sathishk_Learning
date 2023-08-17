@@ -1,4 +1,4 @@
-package mandatoryHomeWork.Selenium;
+package mandatoryHomeWork.selenium;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -43,7 +43,7 @@ public class Saleforce_CreateAccount {
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		
 		driver.get("https://login.salesforce.com");
 		driver.findElement(By.id("username")).sendKeys("hari.radhakrishnan@qeagle.com");
