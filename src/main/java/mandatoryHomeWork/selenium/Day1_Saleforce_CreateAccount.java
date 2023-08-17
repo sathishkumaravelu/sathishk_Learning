@@ -16,7 +16,7 @@ import com.github.javafaker.Faker;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Saleforce_CreateAccount {
+public class Day1_Saleforce_CreateAccount {
 
 	/*
 	 * Requirement : 
