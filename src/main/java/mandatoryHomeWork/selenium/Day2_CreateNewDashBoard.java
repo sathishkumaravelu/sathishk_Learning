@@ -66,6 +66,8 @@ public class Day2_CreateNewDashBoard {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='dashboard']")));
 		driver.findElement(By.id("dashboardNameInput")).sendKeys("Salesforce Automation by Sathish");
 		driver.findElement(By.id("submitBtn")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Save']")));
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
 		
 	}
 

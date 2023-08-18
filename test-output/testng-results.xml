@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T03:41:39 IST" name="Default suite" finished-at="2023-08-18T03:42:16 IST" duration-ms="37523">
+  <suite started-at="2023-08-18T13:29:34 IST" name="Default suite" finished-at="2023-08-18T13:30:28 IST" duration-ms="54227">
     <groups>
     </groups>
-    <test started-at="2023-08-18T03:41:39 IST" name="Default test" finished-at="2023-08-18T03:42:16 IST" duration-ms="37523">
+    <test started-at="2023-08-18T13:29:34 IST" name="Default test" finished-at="2023-08-18T13:30:28 IST" duration-ms="54227">
       <class name="mandatoryHomeWork.selenium.Day2_CreateNewDashBoard">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@3eb25e1a]" started-at="2023-08-18T03:41:39 IST" name="setUpMethod" finished-at="2023-08-18T03:41:49 IST" duration-ms="9765" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@233795b6]" started-at="2023-08-18T13:29:34 IST" name="setUpMethod" finished-at="2023-08-18T13:29:49 IST" duration-ms="15612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="createDashboard()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@3eb25e1a]" started-at="2023-08-18T03:41:49 IST" name="createDashboard" finished-at="2023-08-18T03:42:16 IST" duration-ms="27141" status="PASS">
+        <test-method signature="createDashboard()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@233795b6]" started-at="2023-08-18T13:29:49 IST" name="createDashboard" finished-at="2023-08-18T13:30:28 IST" duration-ms="38513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDashboard -->
-        <test-method is-config="true" signature="postSetup()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@3eb25e1a]" started-at="2023-08-18T03:42:16 IST" name="postSetup" finished-at="2023-08-18T03:42:16 IST" duration-ms="520" status="PASS">
+        <test-method is-config="true" signature="postSetup()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@233795b6]" started-at="2023-08-18T13:30:28 IST" name="postSetup" finished-at="2023-08-18T13:30:28 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postSetup -->

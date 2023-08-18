@@ -1,4 +1,4 @@
-package mandatoryHomeWork.java.week2;
+package mandatoryHomeWork.week2;
 
 import java.time.LocalDate;
 
