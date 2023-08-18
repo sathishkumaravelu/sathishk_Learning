@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T13:29:34 IST" name="Default suite" finished-at="2023-08-18T13:30:28 IST" duration-ms="54227">
+  <suite started-at="2023-08-18T15:54:36 IST" name="Default suite" finished-at="2023-08-18T15:54:44 IST" duration-ms="7406">
     <groups>
     </groups>
-    <test started-at="2023-08-18T13:29:34 IST" name="Default test" finished-at="2023-08-18T13:30:28 IST" duration-ms="54227">
-      <class name="mandatoryHomeWork.selenium.Day2_CreateNewDashBoard">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@233795b6]" started-at="2023-08-18T13:29:34 IST" name="setUpMethod" finished-at="2023-08-18T13:29:49 IST" duration-ms="15612" status="PASS">
+    <test started-at="2023-08-18T15:54:36 IST" name="Default test" finished-at="2023-08-18T15:54:44 IST" duration-ms="7406">
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.UpdateBooking_Restful_Booking">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.UpdateBooking_Restful_Booking@6c6cb480]" started-at="2023-08-18T15:54:41 IST" name="setUp" finished-at="2023-08-18T15:54:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="createDashboard()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@233795b6]" started-at="2023-08-18T13:29:49 IST" name="createDashboard" finished-at="2023-08-18T13:30:28 IST" duration-ms="38513" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="updateBooking()[pri:3, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.UpdateBooking_Restful_Booking@6c6cb480]" started-at="2023-08-18T15:54:41 IST" name="updateBooking" finished-at="2023-08-18T15:54:42 IST" depends-on-methods="mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.CreateBooking_Restful_Booking.createBooking, mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.AuthCreation_Restful_Booking.authCreation" duration-ms="1341" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createDashboard -->
-        <test-method is-config="true" signature="postSetup()[pri:0, instance:mandatoryHomeWork.selenium.Day2_CreateNewDashBoard@233795b6]" started-at="2023-08-18T13:30:28 IST" name="postSetup" finished-at="2023-08-18T13:30:28 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- updateBooking -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.UpdateBooking_Restful_Booking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.AuthCreation_Restful_Booking">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.AuthCreation_Restful_Booking@9d5509a]" started-at="2023-08-18T15:54:36 IST" name="setUp" finished-at="2023-08-18T15:54:37 IST" duration-ms="554" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postSetup -->
-      </class> <!-- mandatoryHomeWork.selenium.Day2_CreateNewDashBoard -->
+        </test-method> <!-- setUp -->
+        <test-method signature="authCreation()[pri:1, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.AuthCreation_Restful_Booking@9d5509a]" started-at="2023-08-18T15:54:37 IST" name="authCreation" finished-at="2023-08-18T15:54:40 IST" duration-ms="2832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authCreation -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.AuthCreation_Restful_Booking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.DeleteBooking_Restful_Booking">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.DeleteBooking_Restful_Booking@179ece50]" started-at="2023-08-18T15:54:42 IST" name="setUp" finished-at="2023-08-18T15:54:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteBooking()[pri:0, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.DeleteBooking_Restful_Booking@179ece50]" started-at="2023-08-18T15:54:42 IST" name="deleteBooking" finished-at="2023-08-18T15:54:44 IST" depends-on-methods="mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.UpdateBooking_Restful_Booking.updateBooking" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBooking -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.DeleteBooking_Restful_Booking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.CreateBooking_Restful_Booking">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.CreateBooking_Restful_Booking@3b0090a4]" started-at="2023-08-18T15:54:40 IST" name="setUp" finished-at="2023-08-18T15:54:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createBooking()[pri:2, instance:mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.CreateBooking_Restful_Booking@3b0090a4]" started-at="2023-08-18T15:54:40 IST" name="createBooking" finished-at="2023-08-18T15:54:41 IST" duration-ms="1312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBookingChaining.CreateBooking_Restful_Booking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
