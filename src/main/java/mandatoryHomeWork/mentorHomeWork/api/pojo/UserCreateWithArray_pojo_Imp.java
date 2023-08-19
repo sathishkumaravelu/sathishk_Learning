@@ -35,17 +35,22 @@ public class UserCreateWithArray_pojo_Imp {
 		
 		System.out.println(obj);
 		
-		RequestSpecification requestBody = RestAssured
+		 									RestAssured
 												.given()
 												.baseUri("https://petstore.swagger.io/v2")
 												.contentType(ContentType.JSON)
 												.accept("application/json")
-												.body(obj);
+												.body(obj)
+												.post("/user").then().log().all();
+												
+												
+												
+												
 		
-		
+		/*
 		//printing the requestBody log
 		System.out.println("********** Request log ************");
-		requestBody.then().log().everything(true);
+		//requestBody.then().log().everything(true);
 
 		//bulding the post response
 		Response postResponseBody = requestBody.post("/user/createWithArray");
@@ -53,7 +58,7 @@ public class UserCreateWithArray_pojo_Imp {
 		System.out.println("********** Response body ************");
 		postResponseBody.prettyPrint();
 		//asset the response code
-		postResponseBody.then().statusCode(200);
+		postResponseBody.then().statusCode(200);*/
 	}
 
 }

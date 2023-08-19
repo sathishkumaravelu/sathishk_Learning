@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.selenium.Day2_CreateNewDashBoard">
+      <class name="mandatoryHomeWork.mentorHomeWork.api.pojo.UserCreateWithArray_pojo_Imp">
         <methods>
-          <include name="createDashboard"/>
-          <include name="postSetup"/>
-          <include name="setUpMethod"/>
+          <include name="createUserFrom_pojoClass"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.selenium.Day2_CreateNewDashBoard -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.pojo.UserCreateWithArray_pojo_Imp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
