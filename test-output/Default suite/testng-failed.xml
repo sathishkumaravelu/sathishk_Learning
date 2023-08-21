@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.mentorHomeWork.api.pojo.UserCreateWithArray_pojo_Imp">
+      <class name="mandatoryHomeWork.selenium.Day3_CreateCampaign">
         <methods>
-          <include name="createUserFrom_pojoClass"/>
+          <include name="setup"/>
+          <include name="createCampagine"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.pojo.UserCreateWithArray_pojo_Imp -->
+      </class> <!-- mandatoryHomeWork.selenium.Day3_CreateCampaign -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
