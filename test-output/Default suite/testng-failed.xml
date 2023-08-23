@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.selenium.Day3_CreateCampaign">
+      <class name="mandatoryHomeWork.selenium.Day4_Chatter_Tab">
         <methods>
           <include name="setup"/>
-          <include name="createCampagine"/>
+          <include name="createChatter"/>
+          <include name="postSetup"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.selenium.Day3_CreateCampaign -->
+      </class> <!-- mandatoryHomeWork.selenium.Day4_Chatter_Tab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
