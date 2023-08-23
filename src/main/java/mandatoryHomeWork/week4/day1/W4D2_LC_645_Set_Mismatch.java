@@ -18,7 +18,7 @@ import org.junit.Test;
 		 * them in the form of an array.
 		 * 
 		 * 1. Understanding the problem - yes - input : int array - output : int array
-		 * 2. Test data: 
+		 * 2. Test data: [5 Mins]
 		 * valid data: [1,2,3,3,5] op : [3,4] 
 		 * invalid data:
 		 * [1,2,3,4] op: [-1,-1] 
@@ -27,8 +27,8 @@ import org.junit.Test;
 		 * 
 		 * solution 4. alternate approaches? no 
 		 * 
-		 * 6. dry run psuedo code with testdata - yes
-		 * 7. 
+		 * 6. dry run psuedo code with testdata - yes [12 Mins]
+		 * 7. Write the code on notepad - [10Mins]
 		 * 
  * 
  * 
@@ -72,12 +72,14 @@ public class W4D2_LC_645_Set_Mismatch {
 	
 	/*
 	
-	 * 5. Psuedo code : 
+	 * 5. Psuedo code : [15 Mins]
 	 * > sort the array 
 	 * > need to know the size 
 	 * > create 1 loops, check if element are duplicate if so add
-	 * it in result array
+	 * it in result array zero th element 
+	 * > add one to the duplicate value and place it results of first element
 	 */
+	//o(n)
 	public int[] findErrorNums(int[] nums) {
 	   int size = nums.length;
 	      Arrays.sort(nums);
@@ -134,6 +136,7 @@ public class W4D2_LC_645_Set_Mismatch {
 	 * no create a loop for count array from 1 and if it has 2 then its a duplicate if its zero then its the missing element 
 	 * 
 	 */
+	//o(n) +0(n) > o(2n) : > o(n)
 	public int[] findErrorNumbers(int[] nums) {
 	    int n = nums.length;
 	    Arrays.sort(nums);
