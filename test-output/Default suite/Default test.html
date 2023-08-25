@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 23 17:39:11 IST 2023</td>
+<td>Started on:</td><td>Fri Aug 25 20:05:23 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>112 seconds (112990 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14830 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,125 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.updateBooking()'><b>updateBooking</b><br>Test class: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking</td>
+<td><div><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;firstname&quot; (class mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody), not marked as ignorable (one known property: &quot;booking&quot;])
+ at [Source: (String)&quot;{&quot;firstname&quot;:&quot;Guna&quot;,&quot;lastname&quot;:&quot;Kumaravelu&quot;,&quot;totalprice&quot;:121,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2018-01-01&quot;},&quot;additionalneeds&quot;:&quot;extra bed&quot;}&quot;; line: 1, column: 15] (through reference chain: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody[&quot;firstname&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.updateBooking(UpdateBooking_Restful_Booking.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;firstname&quot; (class mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody), not marked as ignorable (one known property: &quot;booking&quot;])
+ at [Source: (String)&quot;{&quot;firstname&quot;:&quot;Guna&quot;,&quot;lastname&quot;:&quot;Kumaravelu&quot;,&quot;totalprice&quot;:121,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2018-01-01&quot;},&quot;additionalneeds&quot;:&quot;extra bed&quot;}&quot;; line: 1, column: 15] (through reference chain: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody[&quot;firstname&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 36 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1386999197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1386999197'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;firstname&quot; (class mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody), not marked as ignorable (one known property: &quot;booking&quot;])
+ at [Source: (String)&quot;{&quot;firstname&quot;:&quot;Guna&quot;,&quot;lastname&quot;:&quot;Kumaravelu&quot;,&quot;totalprice&quot;:121,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2018-01-01&quot;},&quot;additionalneeds&quot;:&quot;extra bed&quot;}&quot;; line: 1, column: 15] (through reference chain: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody[&quot;firstname&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.updateBooking(UpdateBooking_Restful_Booking.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;firstname&quot; (class mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody), not marked as ignorable (one known property: &quot;booking&quot;])
+ at [Source: (String)&quot;{&quot;firstname&quot;:&quot;Guna&quot;,&quot;lastname&quot;:&quot;Kumaravelu&quot;,&quot;totalprice&quot;:121,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2018-01-01&quot;},&quot;additionalneeds&quot;:&quot;extra bed&quot;}&quot;; line: 1, column: 15] (through reference chain: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody[&quot;firstname&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 36 more
+</pre></div></td>
+<td>1</td>
+<td>mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking@4116aac9</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +195,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='mandatoryHomeWork.selenium.Day4_Chatter_Tab.createChatter()'><b>createChatter</b><br>Test class: mandatoryHomeWork.selenium.Day4_Chatter_Tab</td>
+<td title='mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking.authCreation()'><b>authCreation</b><br>Test class: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking</td>
 <td></td>
-<td>94</td>
-<td>mandatoryHomeWork.selenium.Day4_Chatter_Tab@77c2494c</td></tr>
+<td>2</td>
+<td>mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking@292b08d6</td></tr>
+<tr>
+<td title='mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.DeleteBooking_Restful_Booking.deleteBooking()'><b>deleteBooking</b><br>Test class: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.DeleteBooking_Restful_Booking</td>
+<td></td>
+<td>1</td>
+<td>mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.DeleteBooking_Restful_Booking@7eac9008</td></tr>
+<tr>
+<td title='mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking.createBooking()'><b>createBooking</b><br>Test class: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking</td>
+<td></td>
+<td>3</td>
+<td>mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking@74e52ef6</td></tr>
+<tr>
+<td title='mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking.getBooking()'><b>getBooking</b><br>Test class: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking</td>
+<td></td>
+<td>1</td>
+<td>mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking@1fa121e2</td></tr>
+<tr>
+<td title='mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck.pingCheckMethod()'><b>pingCheckMethod</b><br>Test class: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck</td>
+<td></td>
+<td>3</td>
+<td>mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck@62ddbd7e</td></tr>
 </table><p>
 </body>
 </html>

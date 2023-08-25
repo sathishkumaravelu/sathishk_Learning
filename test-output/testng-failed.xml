@@ -3,13 +3,36 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.selenium.Day4_Chatter_Tab">
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking">
         <methods>
-          <include name="setup"/>
-          <include name="createChatter"/>
-          <include name="postSetup"/>
+          <include name="setUp"/>
+          <include name="getBooking"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.selenium.Day4_Chatter_Tab -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking">
+        <methods>
+          <include name="createBooking"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking">
+        <methods>
+          <include name="updateBooking"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking">
+        <methods>
+          <include name="authCreation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking -->
+      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck">
+        <methods>
+          <include name="pingCheckMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

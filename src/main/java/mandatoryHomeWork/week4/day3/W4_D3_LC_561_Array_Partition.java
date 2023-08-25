@@ -48,10 +48,12 @@ public class W4_D3_LC_561_Array_Partition {
 		Assert.assertEquals(18,arrayPartition(new int[] {6,6,6,6,6,6}));
 	}
 	
-	
+	//
 	public int arrayPartition(int [] num) {
+		//o(n log n)
 		Arrays.sort(num);
 		int sum=0;
+		//o(n)
 		for (int i = 0; i < num.length; i++) {
 			if(i%2==0) {
 				sum+=num[i];
