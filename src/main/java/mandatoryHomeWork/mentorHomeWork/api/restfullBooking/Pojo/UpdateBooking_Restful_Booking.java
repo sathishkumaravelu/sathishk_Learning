@@ -57,6 +57,6 @@ public class UpdateBooking_Restful_Booking extends BaseClass {
 		
 		updateResBody updateBookingRes = responseBody.getBody().as(updateResBody.class);
 		responseBody.then().assertThat().statusCode(200);
-		Assert.assertEquals(updateBookingRes.getBooking().getFirstname(), req.getFirstname());
+		Assert.assertEquals(updateBookingRes.getFirstname(), req.getFirstname());
 	}
 }

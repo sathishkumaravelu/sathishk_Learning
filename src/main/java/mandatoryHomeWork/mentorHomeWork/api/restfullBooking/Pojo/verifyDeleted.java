@@ -9,7 +9,7 @@ public class verifyDeleted extends BaseClass{
 
 	/*
 	* EndPoint : https://restful-booker.herokuapp.com
-	* Pathparameter: 
+	* Path parameter: 
 	* Header : 'Content-Type: application/json'  // 'Cookie: token=abc123'
 	* Auth : null
 	* Request Body: 
@@ -17,7 +17,7 @@ public class verifyDeleted extends BaseClass{
 	* 
 	*/
 	
-	@Test(priority = 7,dependsOnMethods ="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.DeleteBooking_Restful_Booking")
+	@Test(priority = 7,dependsOnMethods ="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.updateBooking")
 
 	public void deleteBooking() {
 	
