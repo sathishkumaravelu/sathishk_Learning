@@ -77,6 +77,7 @@ public class TC001_CreateNewCase {
 		
 		Assert.assertEquals(caseNumber, expectedNumber,"case number not created");
 		
+		//boolean displayed = driver.findElement(By.xpath("")).isDisplayed();
 	}
 
 }

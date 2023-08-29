@@ -9,67 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,830</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,550</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking</td><td><a href="#m0">updateBooking</a></td><td rowspan="1">1692974135020</td><td rowspan="1">1517</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking</td><td><a href="#m1">authCreation</a></td><td rowspan="1">1692974127550</td><td rowspan="1">2828</td></tr><tr class="passedodd"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking</td><td><a href="#m2">createBooking</a></td><td rowspan="1">1692974130397</td><td rowspan="1">3113</td></tr><tr class="passedeven"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.DeleteBooking_Restful_Booking</td><td><a href="#m3">deleteBooking</a></td><td rowspan="1">1692974136545</td><td rowspan="1">1386</td></tr><tr class="passedodd"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking</td><td><a href="#m4">getBooking</a></td><td rowspan="1">1692974133519</td><td rowspan="1">1495</td></tr><tr class="passedeven"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck</td><td><a href="#m5">pingCheckMethod</a></td><td rowspan="1">1692974124317</td><td rowspan="1">3214</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking</td><td><a href="#m0">authCreation</a></td><td rowspan="1">1693301524135</td><td rowspan="1">2270</td></tr><tr class="passedodd"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking</td><td><a href="#m1">createBooking</a></td><td rowspan="1">1693301526409</td><td rowspan="1">2313</td></tr><tr class="passedeven"><td rowspan="1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck</td><td><a href="#m2">pingCheckMethod</a></td><td rowspan="1">1693301520768</td><td rowspan="1">3358</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking#updateBooking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;firstname&quot; (class mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody), not marked as ignorable (one known property: &quot;booking&quot;])
- at [Source: (String)&quot;{&quot;firstname&quot;:&quot;Guna&quot;,&quot;lastname&quot;:&quot;Kumaravelu&quot;,&quot;totalprice&quot;:121,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2018-01-01&quot;},&quot;additionalneeds&quot;:&quot;extra bed&quot;}&quot;; line: 1, column: 15] (through reference chain: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody[&quot;firstname&quot;])
-	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
-	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
-	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
-	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
-	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
-	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
-	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
-	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
-	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
-	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.updateBooking(UpdateBooking_Restful_Booking.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;firstname&quot; (class mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody), not marked as ignorable (one known property: &quot;booking&quot;])
- at [Source: (String)&quot;{&quot;firstname&quot;:&quot;Guna&quot;,&quot;lastname&quot;:&quot;Kumaravelu&quot;,&quot;totalprice&quot;:121,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2018-01-01&quot;},&quot;additionalneeds&quot;:&quot;extra bed&quot;}&quot;; line: 1, column: 15] (through reference chain: mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.updateResBody[&quot;firstname&quot;])
-	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)
-	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
-	... 36 more
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking#authCreation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking#createBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.DeleteBooking_Restful_Booking#deleteBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.GetBooking#getBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck#pingCheckMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking#authCreation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking#createBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck#pingCheckMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

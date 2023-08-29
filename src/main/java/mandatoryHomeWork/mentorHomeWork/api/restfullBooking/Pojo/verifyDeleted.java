@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import mandatoryHomeWork.mentorHomeWork.api.restfullBooking.PojoClass.CreateBookingReq;
 
 public class verifyDeleted extends BaseClass{
 
@@ -13,23 +14,16 @@ public class verifyDeleted extends BaseClass{
 	* Header : 'Content-Type: application/json'  // 'Cookie: token=abc123'
 	* Auth : null
 	* Request Body: 
-	* Method :DELETE 
+	* Method :GET 
 	* 
 	*/
 	
-	@Test(priority = 7,dependsOnMethods ="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.UpdateBooking_Restful_Booking.updateBooking")
-
-	public void deleteBooking() {
+	@Test(priority = 7,dependsOnMethods ="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.DeleteBooking_Restful_Booking.deleteBooking")
+	public void verifyDeleteBooking() {
 	
-		RequestSpecification deleteRequest = request
-				.given()
-				.header("Accept","application/json")
-				.header("Cookie", "token="+tokenValue);
-
-		deleteRequest.log().all();
-		Response deleteResponseBody = deleteRequest.delete("/booking/"+bookingId);
-		deleteResponseBody.prettyPrint();
-		deleteResponseBody.then().assertThat().statusCode(201);
+		Response response = request.given().header("accept","application/json").basePath("/booking/"+bookingId).get();
+		response.prettyPrint();
+		response.then().assertThat().statusCode(404);
 	}
 	
 }
