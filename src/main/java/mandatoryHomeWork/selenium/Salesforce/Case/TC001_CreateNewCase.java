@@ -1,4 +1,4 @@
-package mandatoryHomeWork.selenium.Salesforce;
+package mandatoryHomeWork.selenium.Salesforce.Case;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;

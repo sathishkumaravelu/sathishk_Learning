@@ -18,10 +18,8 @@ public class getBookingFilter extends BaseClass{
 		response.prettyPrint();		
 		getBookingIdFilter_Pojo[] getRes = response.getBody().as(getBookingIdFilter_Pojo[].class);
 
-		for (int i = 0; i < getRes.length; i++) {
-			bookingid[] getbookingid = getRes[i].getbookingid();
-			System.out.println(getbookingid);
-		}
+		System.out.println(getRes.length);
+		System.out.println(getRes[0].getbookingid());
 		response.then().assertThat().statusCode(200);
 	
 

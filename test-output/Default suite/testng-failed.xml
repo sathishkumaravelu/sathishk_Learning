@@ -3,30 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.getBookingFilter">
+      <class name="mandatoryHomeWork.selenium.Salesforce.WorkType.TC001_NewWorkType">
         <methods>
-          <include name="getBookingFilterID"/>
-          <include name="setUp"/>
+          <include name="tc001_NewWorkType"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.getBookingFilter -->
-      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking">
-        <methods>
-          <include name="authCreation"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.AuthCreation_Restful_Booking -->
-      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck">
-        <methods>
-          <include name="pingCheckMethod"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.PingCheck -->
-      <class name="mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking">
-        <methods>
-          <include name="createBooking"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.CreateBooking_Restful_Booking -->
+      </class> <!-- mandatoryHomeWork.selenium.Salesforce.WorkType.TC001_NewWorkType -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,11 +1,10 @@
-package mandatoryHomeWork.selenium.Salesforce;
+package mandatoryHomeWork.selenium.Salesforce.Case;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,21 +13,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC003_DeleteCase {
+public class TC004_CreateCaseWithoutMandate {
 
-	/*
-	Test Steps:
+	/*		
+		Test Steps:
 		1. Login to https://login.salesforce.com
 		2. Click on toggle menu button from the left corner
 		3. Click view All and click Sales from App Launcher
 		4. Click on Cases tab 
-		5. Click on the Dropdown icon and select Delete from the case you created by reffering "case owner alias"
-		6. Verify the case with your name is deleted or not
+		5) Click on New button
+		6) Choose Contact Name from DropDown
+		7) Select status as None
+		8) Enter Subject as 'Testing' and description as 'Automation testing'
+		9) Click 'Save'
+		10)Get the text of Error message Displayed and Verify the message
+		
 	 */
-	
-	@Test
-	//@Test(dependsOnMethods = "mandatoryHomeWork.selenium.Salesforce.TC002_EditCase.tc002_EditCase")
-	public void tc003_DeleteCase() {
+	@Test(dependsOnMethods = "mandatoryHomeWork.selenium.Salesforce.TC003_DeleteCase.tc003_DeleteCase")
+	//@Test
+	public void tc001_CreateNewCase() {
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--disable-notifications");
 		ChromeDriver driver = new ChromeDriver(op);
@@ -48,21 +51,27 @@ public class TC003_DeleteCase {
 		wait.until(ExpectedConditions.elementToBeClickable(accountsElement));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",accountsElement);
-				
+		
 		driver.findElement(By.xpath("(//*[@data-id='Case'])[last()]")).click();
-		String caseNo = driver.findElement(By.xpath("(//*[@data-aura-class='forceInlineEditCell'])[1]")).getText();
-		System.out.println(caseNo);
-		driver.findElement(By.xpath("(//*[contains(@class,'rowActionsPlaceHolder')])[1]")).click();
-		driver.findElement(By.xpath("(//a[@title='Delete'])[last()]")).click();
 		
-		driver.findElement(By.xpath("//button[@title='Delete']")).click();
-				
-		driver.findElement(By.xpath("//input[@placeholder='Search this list...']")).sendKeys(caseNo,Keys.ENTER);
+		driver.findElement(By.xpath("//a[@title='New']")).click();
 		
-		driver.findElement(By.xpath("//*[@name='refreshButton']")).click();
-		boolean displayed = driver.findElement(By.xpath("//span[text()='No items to display.']")).isDisplayed();
+		driver.findElement(By.xpath("//*[@placeholder='Search Contacts...']")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@title='Morkus tomas']"))).click();		
+
+		driver.findElement(By.xpath("(//label[text()='Status']/following-sibling::div)[1]//button")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@title='--None--']"))).click();		
+		
+		
+		driver.findElement(By.xpath("//*[@name='Subject']")).sendKeys("Testing");
+		driver.findElement(By.xpath("(//*[text()='Description']/following::textarea)[1]")).sendKeys("Automation testing");
+		
+		driver.findElement(By.xpath("//button[@name='SaveEdit']")).click();
+		
+		boolean displayed = driver.findElement(By.xpath("//*[text()='We hit a snag.']")).isDisplayed();
 		
 		Assert.assertEquals(displayed, true);
+		
 	}
 
 }

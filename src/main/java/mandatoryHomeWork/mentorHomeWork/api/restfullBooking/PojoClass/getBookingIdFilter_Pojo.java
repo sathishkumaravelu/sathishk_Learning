@@ -5,13 +5,13 @@ import mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo.bookingid;
 public class getBookingIdFilter_Pojo {
 
 	
-	private bookingid[] bookingid;
+	private Integer bookingid;
 	
 	public getBookingIdFilter_Pojo() {
 		
 	}
 	
-	public bookingid[] getbookingid() {
+	public Integer getbookingid() {
 		
 		return bookingid;
 	}
