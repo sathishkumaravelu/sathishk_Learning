@@ -1,4 +1,4 @@
-package mandatoryHomeWork.mentorHomeWork.api.restfullBooking.Pojo;
+package mandatoryHomeWork.mentorHomeWork.api.pojo;
 
 import org.testng.annotations.BeforeMethod;
 

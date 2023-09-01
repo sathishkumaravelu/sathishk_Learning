@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.selenium.Salesforce.WorkType.TC001_NewWorkType">
+      <class name="mandatoryHomeWork.mentorHomeWork.api.pojo.Tc_PojoChaining">
         <methods>
-          <include name="tc001_NewWorkType"/>
+          <include name="setUp"/>
+          <include name="deleteBooking"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.selenium.Salesforce.WorkType.TC001_NewWorkType -->
+      </class> <!-- mandatoryHomeWork.mentorHomeWork.api.pojo.Tc_PojoChaining -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -41,20 +41,15 @@ public class UpdateBooking_Restful_Booking extends BaseClass {
 		checkingDates.setCheckin("2018-01-01");
 		checkingDates.setCheckout("2018-01-01");
 		req.setBookingdates(checkingDates);
-		req.setAdditionalneeds("extra bed");
-		
+		req.setAdditionalneeds("extra bed");	
 				RequestSpecification requestBody = request.given()
 				   .header("Accept","application/json")
 				   .header("Cookie","token="+tokenValue)
 				   .body(req);
-		
 		requestBody.log().all();
-		
-		
 		System.out.println("-----------Response Body--------------");
 		Response responseBody = requestBody.put("/booking/"+bookingId);
 		responseBody.prettyPrint();
-		
 		updateResBody updateBookingRes = responseBody.getBody().as(updateResBody.class);
 		responseBody.then().assertThat().statusCode(200);
 		Assert.assertEquals(updateBookingRes.getFirstname(), req.getFirstname());
