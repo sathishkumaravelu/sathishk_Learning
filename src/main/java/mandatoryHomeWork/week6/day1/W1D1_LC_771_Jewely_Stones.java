@@ -22,10 +22,10 @@ public class W1D1_LC_771_Jewely_Stones {
 	 3.Do you know the Solution? - Yes
 	 4.Do you have any alternate approaches?  - no
 	 6.Dry run the pseudo code with all test data from step #2 - 
-	 7.Write the code on notepad - 
+	 7.Write the code on notepad - 3 Mins
 		
 		
-	 8. Dry run the code with all test data from step #2 --
+	 8. Dry run the code with all test data from step #2 -- 2
 	 
 	 int counter = 0;
 	 for(int i=0; i<stones.length();i++){
@@ -68,7 +68,7 @@ public class W1D1_LC_771_Jewely_Stones {
 	 		if both are equal add an increment of counter
 	 3. at end return the counter value
 	 */
-	
+	//O[n]
 	public int findNoStones(String stones,String jewels) {
 		 int counter = 0;
 		 for(int i=0; i<stones.length();i++){
