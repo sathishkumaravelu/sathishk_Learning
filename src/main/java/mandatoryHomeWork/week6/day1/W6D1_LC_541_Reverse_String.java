@@ -32,19 +32,21 @@ If there are fewer than k characters left, reverse all of them. If there are les
 	@Test
 	public void validData() {
 		String revesedString=findReverseString("sathishkumaravelu", 2);
-		Assert.assertEquals(isAccronym, "asthsihkmuarvaelu");
+		Assert.assertEquals(revesedString, "asthsihkmuarvaelu");
 	}
 	@Test
 	public void inValidData() {
 		String revesedString=findReverseString("leen", 5);
-		Assert.assertEquals(isAccronym, "neel");
+		Assert.assertEquals(revesedString, "neel");
 	}
 	@Test
 	public void edgeData() {
 		String revesedString=findReverseString("ab", 1);
-		Assert.assertEquals(isAccronym, "ba");
+		Assert.assertEquals(revesedString, "ba");
 	}
 	
-	
-	
 }
+	
+	
+	
+
