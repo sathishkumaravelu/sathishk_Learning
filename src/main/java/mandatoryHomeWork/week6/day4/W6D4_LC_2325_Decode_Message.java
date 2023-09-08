@@ -100,7 +100,7 @@ public class W6D4_LC_2325_Decode_Message {
 			if (subtutionTab.containsKey(temp)) {
 				decrypted+=subtutionTab.get(temp);
 			}else {
-				decrypted+=+temp;
+				decrypted+=temp;
 			}
 		}
 		return decrypted;
