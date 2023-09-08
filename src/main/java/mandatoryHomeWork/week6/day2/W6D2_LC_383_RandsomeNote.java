@@ -1,6 +1,7 @@
 package mandatoryHomeWork.week6.day2;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -30,6 +31,26 @@ public class W6D2_LC_383_RandsomeNote {
 		boolean isRandsomeNote = randsomeNoteCheck("code", "codee");
 		Assert.assertEquals(isRandsomeNote, true);
 	}
+	
+	@Test
+	public void validData4() {
+		boolean isRandsomeNote = randsomeNoteCheck("codeee", "codxee");
+		Assert.assertEquals(isRandsomeNote, false);
+	}
+
+	//Pseudo code: - 15 mins
+//	sort the input  magazine and randosome value
+//	if magazine is less than randsomenote length return false
+//	check if the length of magazine is higher than randsomenote
+//	iterate thru the length of randomeNote
+//	keep a variable to check if true 
+//	iterate thru the length of magazine 
+//	check with the magazin and randomeNote, if matches replace the value to ' ' in array
+//	break the loop and check gain if found else return true
+//	go on 
+//	then finaly return true outside the magazine loop 
+//	else overall return false
+	
 
 	public boolean randsomeNoteCheck(String ransomenote, String magazine) {
 
@@ -48,21 +69,20 @@ public class W6D2_LC_383_RandsomeNote {
 		if (magazineSort.contains(ransomeNote))
 			return true;
 		else if (magazineSort.length() > ransomeNote.length()) {
-			int count = 0;
-			// cdeo
-			// cdeeo
-			for (int i = 0; i < magazineSort.length(); i++) {
-				if (ransomenote.charAt(i) == magazineSort.charAt(i)) {
-					magazineSort.replace(magazineSort.charAt(i), ' ');
-					count++;
-				} else {
-					
+			for (int i = 0; i < rArray.length; i++) {
+				boolean found = false; 
+				for (int j = 0; j < mArray.length; j++) {
+					if (rArray[i] == mArray[j]) { 
+						mArray[j] = ' '; 
+						found = true; 
+						break; 
+					}
 				}
+				if (!found) return false;
 			}
-			if(count==magazineSort.length())return true;
-
-		} 
+			return true;
+		}
 		return false;
 	}
-
+	
 }

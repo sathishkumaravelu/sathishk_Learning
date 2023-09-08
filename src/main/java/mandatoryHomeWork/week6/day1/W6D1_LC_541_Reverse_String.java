@@ -45,6 +45,24 @@ If there are fewer than k characters left, reverse all of them. If there are les
 		Assert.assertEquals(revesedString, "ba");
 	}
 	
+	
+	public String findReverseString(String string, int k) {
+
+		int tk=2*k;
+		
+		for (int i = 0; i < string.length()/tk; i++) {
+			
+			int start =i;
+			for (int j = 0; j < tk; j++) {
+				
+				
+			}
+			
+		}
+		
+		return null;
+	}
+	
 }
 	
 	
