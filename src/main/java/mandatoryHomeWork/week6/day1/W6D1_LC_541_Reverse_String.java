@@ -42,27 +42,44 @@ If there are fewer than k characters left, reverse all of them. If there are les
 	@Test
 	public void edgeData() {
 		String revesedString=findReverseString("ab", 1);
-		Assert.assertEquals(revesedString, "ba");
+		Assert.assertEquals(revesedString, "ab");
 	}
 	
 	
-	public String findReverseString(String string, int k) {
+	public String findReverseString(String s, int k) {
 
-		int tk=2*k;
-		
-		for (int i = 0; i < string.length()/tk; i++) {
-			
-			int start =i;
-			for (int j = 0; j < tk; j++) {
-				
-				
-			}
-			
+		String newStr = "", subStr;
+		int start = 0, end = k, repNo = 1;
+		if (k > s.length()) {
+			return reverseString(s);
 		}
-		
-		return null;
+		while (end <= s.length()) {
+			subStr = s.substring(start, end);
+			if (repNo % 2 != 0) {
+				newStr = newStr + reverseString(subStr);
+			} else
+				newStr = newStr + subStr;
+			start += k;
+			end += k;
+			repNo++;
+		}
+		if (start < s.length()) {
+			subStr = s.substring(start, s.length());
+			if (repNo % 2 != 0) {
+				newStr = newStr + reverseString(subStr);
+			} else
+				newStr = newStr + subStr;
+		}
+		return newStr;
 	}
-	
+
+	public String reverseString(String str) {
+		String reverse = "";
+		for (int i = str.length() - 1; i >= 0; i--) {
+			reverse = reverse + str.charAt(i);
+		}
+		return reverse;
+	}
 }
 	
 	

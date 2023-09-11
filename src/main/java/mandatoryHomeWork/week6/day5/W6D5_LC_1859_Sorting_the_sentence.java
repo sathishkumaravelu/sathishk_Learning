@@ -70,40 +70,31 @@ public class W6D5_LC_1859_Sorting_the_sentence {
 //	finally convert the list into an string and return 
 	
 	private String sortSentence(String s) {
-		
-		s=s+" ";
+
+		s = s + " ";
 		String[] words = s.split("\\s+");
-		  int wordCount = words.length;
-		  String[] dynamicArray= new String[wordCount]; 
-		
-		//ArrayList<String> dynamicArray = new ArrayList<>();
-		String temp ="";
-		for(int i=0;i<s.length();i++){  //O(N)
-		if(s.charAt(i)!=' '){
-		 temp+=s.charAt(i);
-		}else {
-			char charAt = temp.charAt(temp.length()-1);
-			int index = charAt-'0';
-			dynamicArray[index-1]=temp.replaceAll("[0-9]", "");
-			temp="";
-		}
+		int wordCount = words.length;
+		String[] dynamicArray = new String[wordCount];
 
+		// ArrayList<String> dynamicArray = new ArrayList<>();
+		String temp = "";
+		for (int i = 0; i < s.length(); i++) { // O(N)
+			if (s.charAt(i) != ' ') {
+				temp += s.charAt(i);
+			} else {
+				char charAt = temp.charAt(temp.length() - 1);
+				int index = charAt - '0';
+				dynamicArray[index - 1] = temp.replaceAll("[0-9]", "");
+				temp = "";
+			}
 		}
-		 StringBuilder result = new StringBuilder();
-	        for (int i = 0; i < dynamicArray.length; i++) {
-	            result.append(dynamicArray[i]);
-	            if (i < dynamicArray.length - 1) {
-	                result.append(" "); 
-	            }
-	        }
-
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < dynamicArray.length; i++) {
+			result.append(dynamicArray[i]);
+			if (i < dynamicArray.length - 1) {
+				result.append(" ");
+			}
+		}
 		return result.toString();
-		
-
 	}
-	
-	
-	
-	
-	
 }
