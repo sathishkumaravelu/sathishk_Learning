@@ -5,7 +5,7 @@ import java.util.Arrays;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class W7D1_LC_2810_FaultyKeyboard {
+public class W7D1_LC_2810_Height_Check {
 
 	/*
 	 problem statement: 

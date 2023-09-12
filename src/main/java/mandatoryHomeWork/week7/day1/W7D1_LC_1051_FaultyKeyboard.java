@@ -3,7 +3,7 @@ package mandatoryHomeWork.week7.day1;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class W7D1_LC_1051_Height_Checker {
+public class W7D1_LC_1051_FaultyKeyboard {
 
 	/*
 	 problem statement: 
