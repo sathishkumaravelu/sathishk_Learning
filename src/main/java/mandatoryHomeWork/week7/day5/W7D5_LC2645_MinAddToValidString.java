@@ -18,29 +18,64 @@ A string is called valid if it can be formed by concatenating the string "abc" s
 	
 	
 	/*
-	 * 1. Understanding the problem
+	 * 1. Understanding the problem -> 3 Mins
 	 * 		Input  - String s
 	 * 		Output - int count
 	 * 		constrains
 	 * 		1 <= word.length <= 50
 	 *		word consists of letters "a", "b" and "c" only. 
 	 * 
-	 * 2. Test Data
-	 * 3. do you know solution ? 
-	 * 4. Best solution / alternate solution -
-	 * 5. Pseudo code
+	 * 2. Test Data - 2 Mins
+	 * 3. do you know solution ? Yes
+	 * 4. Best solution / alternate solution - No
+	 * 5. Pseudo code - 1 Hr ( HINT ) 
+	 * 		
+	 * 		1. check if the string length is 1 then return 2 
+	 * 		2. iterate till the length of the given string (pointer)
+	 * 				- intialize a temp counter to check no of existing a's, b's, c's
+	 * 				- check the a if its increment the counter and pointer
+	 * 				- check the next character if pointer less then lenght and next is 'b'
+	 * 					then increment the counter and pointer
+	 * 				- check the next character if pointer less then lenght and next is 'b'
+	 * 					then increment the counter and pointer
+	 * 				- in result, sub the count with the default value (3)
+	 * 		3. return sub 
+	 * 
 	 * 6. dry run the pseudo code
 	 * 7. write the code on notepad
-	 * 8. dry run the code on notepad
-	 * 9. Write code on IDE
-	 * 10. Test and debug
+	 * 	if(word.length()==1) return 2;
+	 * 	int count =0; i =0,result=0;
+	 * 	while (i<s.length()){
+	 * 	int temp = 0;
+	 * 	
+	 * 	if(word[i]< word.length() && words[i]='a'){
+	 * 		count++;
+	 * 		i++;
+	 * }
+	 * if(word[i]< word.length()&& words[i]='b'){
+	 * 		count++;
+	 * 		i++;
+	 * }
+	 * if(word[i]< word.length()&& words[i]='c'){
+	 * 		count++;
+	 * 		i++;
+	 * }
+	 * result+= 3-count;
+	 * }
+	 * return result;
+	 * 
+	 * }
+	 * 
+	 * 8. dry run the code on notepad - 5 Mins
+	 * 9. Write code on IDE - 5 Mins 
+	 * 10. Test and debug - 3 Mins
 	 * 11. Code optimization 
 	 * 
 	 */
 	
 	
 	//
-	//@Test
+	@Test
 	public void validData() {
 		int minValue = addMinimum("a");
 		System.out.println(minValue);
@@ -51,6 +86,7 @@ A string is called valid if it can be formed by concatenating the string "abc" s
 		int minValue = addMinimum("cab");
 		System.out.println(minValue);
 	}
+	@Test
 	public void edgeData() {
 		 addMinimum("abc");
 	}
@@ -63,15 +99,30 @@ A string is called valid if it can be formed by concatenating the string "abc" s
 	//Time complexity 
 	//Space complexity
 	
-	public int addMinimum(String word) {
-	
-		if(word.length()==0) return 3;
-		if(word.length()==1) return 2;
-		int count=0;
-		for(int i=0;i<word.length()/2;i++) {
-			int j=i+1;
+	public int addMinimum(String wordStr) {
+
+		if (wordStr.length() == 1)
+			return 2;
+		int i= 0, result = 0;
+		char[] word = wordStr.toCharArray();
+		while (i < word.length) {
+			int count = 0;
+			if (i < word.length && word[i] == 'a') {
+				count++;
+				i++;
+			}
+			if (i < word.length && word[i] == 'b') {
+				count++;
+				i++;
+			}
+			if (i < word.length && word[i] == 'c') {
+				count++;
+				i++;
+			}
+			result += 3 - count;
 		}
-		
-		
+		return result;
+
+	}
+
     }
-}
