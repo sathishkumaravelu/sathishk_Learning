@@ -47,26 +47,31 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 		Assert.assertEquals(countGoodSubstrings, 4);
 	}
 
+	@Test
 	public void invalidData() {
 		
 		int countGoodSubstrings = countGoodSubstrings("xyzzaz");
 		System.out.println(countGoodSubstrings);
 		Assert.assertEquals(countGoodSubstrings, 1);
 	}
+	@Test
 	public void edgeData() {
 	
-		int countGoodSubstrings = countGoodSubstrings("xyzzaz");
+		int countGoodSubstrings = countGoodSubstrings("aaaaa");
 		System.out.println(countGoodSubstrings);
-		Assert.assertEquals(countGoodSubstrings, 1);
+		Assert.assertEquals(countGoodSubstrings, 0);
 	}
 
+	//Time Complexity - O(n)
+	// Space Complexity - O(N)
+	
 	public int countGoodSubstrings(String word) {
 		int nonDuplicateCount = 0;
-		for (int i = 0; i < word.length() - 2; i++) {
+		for (int i = 0; i < word.length() - 2; i++) { //o(n)
 			HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-			List<Character> list = new LinkedList<Character>();
-			for (int j = i; j < i + 3; j++) {
-				list.add(word.charAt(j));
+			//List<Character> list = new LinkedList<Character>();
+			for (int j = i; j < i + 3; j++) { //O(1)
+				//list.add(word.charAt(j));
 				int count = 1;
 				if (!map.containsKey(word.charAt(j))) {
 					map.put(word.charAt(j), count);
@@ -75,11 +80,60 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 					map.put(word.charAt(j), count + 1);
 				}
 			}
-			if (map.size() == list.size()) {
+			if (map.size() == 3) {
 				nonDuplicateCount++;
 			}
 
 		}
 		return nonDuplicateCount;
+	}
+	
+	
+	
+	
+	public int countGoodSubstrings_SW(String word) {
+		int nonDuplicateCount = 0;
+		int pointer =0, k=3;
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+
+		 while(pointer < k) {
+			 int count = 1;
+			 if (!map.containsKey(word.charAt(pointer))) {
+					map.put(word.charAt(pointer), count);
+					count = 0;
+				} else {
+					map.put(word.charAt(pointer), count + 1);
+				}
+			 pointer++;
+		 }
+		 if(!(map.containsValue(2)||map.containsValue(3))) {
+			 nonDuplicateCount++;
+		 }
+		
+		 while(pointer < word.length()-2) {
+			 int count=1;
+			 int temp = pointer-k;
+
+			if(!(word.charAt(pointer)==word.charAt(temp))){
+				map.remove(word.charAt(temp));
+			}else {
+				map.replace(word.charAt(temp),1);
+			}
+			 
+			 if (!map.containsKey(word.charAt(pointer))) {
+					map.put(word.charAt(pointer), count);
+					count = 0;
+				} else {
+					map.put(word.charAt(pointer), count + 1);
+				}
+			 pointer++;
+			 
+			 if(!(map.containsValue(2)||map.containsValue(3))) {
+				 nonDuplicateCount++;
+			 }
+		 }
+		 
+		return nonDuplicateCount;
+		
 	}
 }
