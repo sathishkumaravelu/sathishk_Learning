@@ -1,5 +1,8 @@
 package mandatoryHomeWork.week7.day7;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 import org.testng.annotations.Test;
 
 public class MinDifferenceScore {
@@ -33,14 +36,18 @@ public class MinDifferenceScore {
 	
 	
 	//
+	@Test
 	public void validData() {
-		
-		minDifference(new int[] {9,4,1,7})
-		
+		int minDifference = minDifference(new int[] {9,4,1,7},2);
+		System.out.println(minDifference);
 	}
 	
+	
+
+	@Test
 	public void invalidData() {
-		
+		int minDifference = minDifference(new int[] {9,4,1,10,12,15},3);
+		System.out.println(minDifference);
 		
 	}
 	public void edgeData() {
@@ -55,17 +62,18 @@ public class MinDifferenceScore {
 	
 	//Time complexity 
 	//Space complexity
-	
-	/*public returntype mehtodname( input ){
-
-		return variableName;
-	*/
-	
-	@Test
-	public void sum() {
-	int a= Integer.MAX_VALUE;
-	int b= Integer.MAX_VALUE;
-	int sum = a+b;
-	System.out.println(sum);
+	public int minDifference(int[] scores, int range) {
+		int min=Integer.MAX_VALUE;
+		Arrays.sort(scores);
+		for(int i =0; i<scores.length;) {
+			int temp=i+range-1;
+			int currentMin = Math.subtractExact(scores[temp], scores[temp-1]);
+			if(min>currentMin) {
+				min = currentMin;
+			}
+			i=i+range;
+		}
+		return min;
 	}
+	
 }
