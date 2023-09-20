@@ -42,7 +42,7 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 	//
 	@Test
 	public void validData() {
-		int countGoodSubstrings = countGoodSubstrings("aababcabc");
+		int countGoodSubstrings = countGoodSubstrings("aababcabc","SW");
 		System.out.println(countGoodSubstrings);
 		Assert.assertEquals(countGoodSubstrings, 4);
 	}
@@ -50,14 +50,14 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 	@Test
 	public void invalidData() {
 		
-		int countGoodSubstrings = countGoodSubstrings("xyzzaz");
+		int countGoodSubstrings = countGoodSubstrings("xyzzaz","SW");
 		System.out.println(countGoodSubstrings);
 		Assert.assertEquals(countGoodSubstrings, 1);
 	}
 	@Test
 	public void edgeData() {
 	
-		int countGoodSubstrings = countGoodSubstrings("aaaaa");
+		int countGoodSubstrings = countGoodSubstrings("aaaaa","SW");
 		System.out.println(countGoodSubstrings);
 		Assert.assertEquals(countGoodSubstrings, 0);
 	}
@@ -91,7 +91,7 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 	
 	
 	
-	public int countGoodSubstrings_SW(String word) {
+	public int countGoodSubstrings(String word,String logic) {
 		int nonDuplicateCount = 0;
 		int pointer =0, k=3;
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
@@ -106,21 +106,21 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 				}
 			 pointer++;
 		 }
-		 if(!(map.containsValue(2)||map.containsValue(3))) {
+		 if(map.size()==3) {
 			 nonDuplicateCount++;
 		 }
 		
-		 while(pointer < word.length()-2) {
+		 while(pointer < word.length()) {
 			 int count=1;
 			 int temp = pointer-k;
 
-			if(!(word.charAt(pointer)==word.charAt(temp))){
+			if(map.get(word.charAt(temp))==1){
 				map.remove(word.charAt(temp));
 			}else {
-				map.replace(word.charAt(temp),1);
+				map.replace(word.charAt(temp), (map.get(word.charAt(temp)))-1);
 			}
-			 
-			 if (!map.containsKey(word.charAt(pointer))) {
+			
+			if (!map.containsKey(word.charAt(pointer))) {
 					map.put(word.charAt(pointer), count);
 					count = 0;
 				} else {
@@ -128,7 +128,7 @@ public class W8_D1_DSA_LC_1876_DistinctCharacterSubString {
 				}
 			 pointer++;
 			 
-			 if(!(map.containsValue(2)||map.containsValue(3))) {
+			 if(map.size()==3) {
 				 nonDuplicateCount++;
 			 }
 		 }
