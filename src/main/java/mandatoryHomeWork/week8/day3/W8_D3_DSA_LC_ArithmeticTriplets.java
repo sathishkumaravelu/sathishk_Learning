@@ -78,38 +78,36 @@ public class W8_D3_DSA_LC_ArithmeticTriplets {
 	//Space complexity
 	
 	public int arithmeticTriplets(int[] nums, int diff) {
-		
-		int right=nums.length-1;
+
+		int right = nums.length - 1;
 		int left = right;
-		int uniqueArithmeticTriplets=0;
-		HashMap<Integer, Integer> map =new HashMap<Integer, Integer>();
-		while(left>=0) {
-			
-			if(nums[right]-nums[left]!=diff) {
+		int uniqueArithmeticTriplets = 0;
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		while (left >= 0) {
+			if (nums[right] - nums[left] != diff) {
 				left--;
-			}else if(nums[right]-nums[left]==diff) {
-				 int count = 0;
-			        if (map.containsKey(nums[right])) {
-			            count = map.get(nums[right]);
-			        }
-			        if (map.containsKey(nums[left])) {
-			            count = map.get(nums[left]);
-			        }
-			        map.put(nums[right], count + 1);
-			        map.put(nums[left], count + 1);
-			        right--;
-					left--;
+			} else if (nums[right] - nums[left] == diff) {
+				int count = 0;
+				if (map.containsKey(nums[right])) {
+					count = map.get(nums[right]);
+				}
+				if (map.containsKey(nums[left])) {
+					count = map.get(nums[left]);
+				}
+				map.put(nums[right], count + 1);
+				map.put(nums[left], count + 1);
+				right--;
+				left--;
 			}
-			
 		}
-		
-		 for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-			 	int value = entry.getValue();
-	            if(value>=2) {
-	            	uniqueArithmeticTriplets++;
-	            }
-	        }
-		 return uniqueArithmeticTriplets;
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			int value = entry.getValue();
+			if (value >= 2) {
+				uniqueArithmeticTriplets++;
+			}
+		}
+		return uniqueArithmeticTriplets;
 	}
 	
 
