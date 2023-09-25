@@ -30,11 +30,11 @@ public class W8_D4_DSA_LC_922_sortArrayByParityII {
 	 * 2. Test Data - 3 Mins
 	 * 3. do you know solution ? Yes
 	 * 4. Best solution / alternate solution - 2 Pointer
-	 * 5. Pseudo code 
-	 * 6. dry run the pseudo code
-	 * 7. write the code on notepad
-	 * 8. dry run the code on notepad
-	 * 9. Write code on IDE
+	 * 5. Pseudo code  - 5 Mins
+	 * 6. dry run the pseudo code - 10 mins
+	 * 7. write the code on notepad - 7 Mins
+	 * 8. dry run the code on notepad - 2 mins
+	 * 9. Write code on IDE - 3 Mins
 	 * 10. Test and debug
 	 * 11. Code optimization 
 	 * 

@@ -1,6 +1,7 @@
 package mandatoryHomeWork.week8.day3;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -77,7 +78,7 @@ public class W8_D3_DSA_LC_ArithmeticTriplets {
 	//Time complexity 
 	//Space complexity
 	
-	public int arithmeticTriplets(int[] nums, int diff) {
+	public int arithmeticTriplets_(int[] nums, int diff) {
 
 		int right = nums.length - 1;
 		int left = right;
@@ -110,5 +111,15 @@ public class W8_D3_DSA_LC_ArithmeticTriplets {
 		return uniqueArithmeticTriplets;
 	}
 	
-
+	public int arithmeticTriplets(int[] nums, int diff) {
+		int result=0;
+		HashSet<Integer> set = new HashSet<Integer>();
+		for (int num : nums) {
+			if(set.contains(num-diff) && set.contains(num-2*diff)) {
+				result++;
+			}
+			set.add(num);
+		}
+		return result;
+	}
 }
