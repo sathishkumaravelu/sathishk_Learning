@@ -91,10 +91,29 @@ public class W4_D5_LC_445_AssignCookies {
 				}
 			}
 		}
-	        
-
 	        return count;
 	    }
 	
 	
+	//DSA
+	 public int findContentChildren(int[] greedChild, int[] cookies) {
+
+
+			int starChild = 0, startCookies = 0;
+			int count = 0;
+			Arrays.sort(cookies);
+			Arrays.sort(greedChild);
+			//System.out.println("cookies size "+cookies.length);
+			while(startCookies<cookies.length&&starChild<greedChild.length) {
+				if(greedChild[starChild]<=cookies[startCookies]) {
+					count++;
+					starChild++;
+					startCookies++;
+				}else {
+					startCookies++;
+				}
+			}
+			return count;
+
+	    }
 }
