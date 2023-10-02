@@ -1,14 +1,9 @@
 package mandatoryHomeWork.week8.day5;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class W8_D4_DSA_LC_922_sortArrayByParityII {
+public class W8_D5_DSA_LC_922_sortArrayByParityII {
 
 
 	/*

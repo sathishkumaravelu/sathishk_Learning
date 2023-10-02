@@ -1,6 +1,5 @@
 package mandatoryHomeWork.week7.day5;
 
-import org.checkerframework.checker.units.qual.s;
 import org.testng.annotations.Test;
 
 public class W7D5_LC2645_MinAddToValidString {
