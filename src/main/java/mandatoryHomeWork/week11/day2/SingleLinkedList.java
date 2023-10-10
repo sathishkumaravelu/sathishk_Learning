@@ -1,43 +1,29 @@
-package mandatoryHomeWork.week11.day1;
+package mandatoryHomeWork.week11.day2;
 
+import mandatoryHomeWork.week11.day1.LL;
 
-public class LL {
-    private ListNode head;
-    private ListNode tail;
+public class SingleLinkedList {
+    public ListNode head;
+    public ListNode tail;
     private int size;
 
-    public LL() {
+    public SingleLinkedList() {
         this.size = 0;
     }
 
-    public class ListNode {
 
-        private int data;
-        private ListNode next;
-
-
-        public ListNode(int value) {
-            this.data = value;
-        }
-
-        public ListNode(int value, ListNode listNode) {
-            this.data = value;
-            this.next = listNode;
-        }
-    }
-
-    public void add(int value){
-        if(head == null)  // we are trying to add the first element
+    public void add(int value) {
+        if (head == null)  // we are trying to add the first element
             head = tail = new ListNode(value);
-        else{
+        else {
             tail.next = new ListNode(value);
             tail = tail.next;
         }
         size++;
     }
 
-    public ListNode add(int[] value){
-        for(int each : value) add(each);
+    public ListNode add(int[] value) {
+        for (int each : value) add(each);
         return head;
     }
 
@@ -51,6 +37,19 @@ public class LL {
         size++;
     }
 
+    public void display(ListNode head) {
+        if (head == null) {
+            System.out.println("Empty List");
+            return;
+        }
+        ListNode currentListNode = head;
+        while (currentListNode != null) {
+            System.out.print(currentListNode.data + "-->");
+            currentListNode = currentListNode.next;
+        }
+        System.out.println("End");
+
+    }
     public void display() {
         if (head == null) {
             System.out.println("Empty List");
@@ -166,7 +165,7 @@ public class LL {
                 currentListNode = currentListNode.next;
                 if (previousListNode != null) {
                     previousListNode.next = currentListNode;
-                }else{
+                } else {
                     head = currentListNode;
                 }
                 size--;
@@ -178,28 +177,28 @@ public class LL {
         }
     }
 
-    public int sizeDynamic(){
+    public int sizeDynamic(ListNode headValue) {
         int size = 0;
         ListNode currentListNode = head;
-        while (currentListNode !=null){
+        while (currentListNode != null) {
             currentListNode = currentListNode.next;
             size++;
         }
         return size;
     }
 
-    public void middleNode(LL headValue){
-        int sizeValue = headValue.sizeDynamic();
+    public void middleNode(ListNode headValue) {
+        int sizeValue = sizeDynamic(headValue);
         int expectedIndex = 0;
         int currentIndex = 0;
 
         if (sizeValue % 2 == 0) {
-            expectedIndex = (sizeValue / 2)-1;
+            expectedIndex = (sizeValue / 2) - 1;
         } else {
             expectedIndex = sizeValue / 2;
         }
 
-        ListNode currentListNode = headValue.head;
+        ListNode currentListNode = headValue;
         ListNode previousListNode = null;
 
         while (currentListNode != null) {
@@ -224,4 +223,5 @@ public class LL {
         }
         return slow;
     }
+
 }
