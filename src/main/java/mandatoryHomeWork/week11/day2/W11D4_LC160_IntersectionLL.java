@@ -4,6 +4,24 @@ import org.testng.annotations.Test;
 
 public class W11D4_LC160_IntersectionLL {
 
+    /*
+     * 1. Understanding the problem - 10 Mins
+     * 		Input  - 2 LinkedList Head
+     * 		Output - Head
+     * 		constrains
+     *
+     * 2. Test Data - 3 Mins
+     * 3. do you know solution ? Yes
+     * 4. Best solution / alternate solution - Yes
+     * 5. Pseudo code -15 Mins
+     * 6. dry run the pseudo code - 5 Mins
+     * 7. write the code on notepad - 5 Mins
+     * 8. dry run the code on notepad - 2 Mins
+     * 9. Write code on IDE - 5 Mins
+     * 10. Test and debug - 1 Mins
+     * 11. Code optimization - 1 Mins
+     *
+     */
 
     @Test
     public void testData() {
