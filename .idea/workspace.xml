@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44c59b98-ab53-49a2-9d21-6abf298143c6" name="Changes" comment="W11 D4 Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day4/W11D4_LC819_MostCommonWord.java" afterDir="false" />
+    <list default="true" id="44c59b98-ab53-49a2-9d21-6abf298143c6" name="Changes" comment="W11 D5 Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/Intersection_LL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/SingleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/cyclicImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/mergeTwoLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/reverseLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/rotateLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/DoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/Nodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/addDDLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/validParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1_LC_387_firstUniqueChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/RemoveDuplicate_MentorConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/W12_D1_LC682_Baseball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,64 +75,31 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sathish/IdeaProjects/sathishk_Learning/src/main/java/mandatoryHomeWork/week11/day1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sathish/IdeaProjects/sathishk_Learning/src/main/java/mandatoryHomeWork/week11/day4&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sathish\IdeaProjects\sathishk_Learning\src\main\java\mandatoryHomeWork\week11\day4" />
+      <recent name="C:\Users\sathish\IdeaProjects\sathishk_Learning\src\main\java\mandatoryHomeWork\week11\day6" />
       <recent name="C:\Users\sathish\IdeaProjects\sathishk_Learning\src\main\java\mandatoryHomeWork\week11\day1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="mandatoryHomeWork.week10.day4" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.W11D4_LC819_MostCommonWord.testData">
-    <configuration name="W11D3_LC2103_RingsAndRods (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.reverseLL.testData">
+    <configuration name="Day1_LC_387_firstUniqueChar.testData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day3.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day3" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day3.W11D3_LC2103_RingsAndRods" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="W11D3_LC2103_RingsAndRods.validData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="kumaravelu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day3" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day3.W11D3_LC2103_RingsAndRods" />
-      <option name="METHOD_NAME" value="validData" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="W11D4_LC1290_ConvertBinaryNo.testData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="kumaravelu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day2" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day2.W11D4_LC1290_ConvertBinaryNo" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.Day1_LC_387_firstUniqueChar" />
       <option name="METHOD_NAME" value="testData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -125,16 +108,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W11D4_LC160_IntersectionLL.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="W12_D1_LC682_Baseball.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day2.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day2" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day2.W11D4_LC160_IntersectionLL" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.W12_D1_LC682_Baseball" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="addDDLL.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="kumaravelu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatoryHomeWork.week11.day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day7" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day7.addDDLL" />
       <option name="METHOD_NAME" value="testData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -143,16 +144,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W11D4_LC819_MostCommonWord.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="reverseLL.testData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day4.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week11.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day4" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day4.W11D4_LC819_MostCommonWord" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day6" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day6.reverseLL" />
+      <option name="METHOD_NAME" value="testData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="validParentheses.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="kumaravelu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatoryHomeWork.week11.day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day7" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day7.validParentheses" />
       <option name="METHOD_NAME" value="testData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -163,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.W11D4_LC819_MostCommonWord.testData" />
-        <item itemvalue="TestNG.W11D4_LC160_IntersectionLL.testData" />
-        <item itemvalue="TestNG.W11D4_LC1290_ConvertBinaryNo.testData" />
-        <item itemvalue="TestNG.W11D3_LC2103_RingsAndRods (1)" />
-        <item itemvalue="TestNG.W11D3_LC2103_RingsAndRods.validData" />
+        <item itemvalue="TestNG.reverseLL.testData" />
+        <item itemvalue="TestNG.W12_D1_LC682_Baseball.test" />
+        <item itemvalue="TestNG.Day1_LC_387_firstUniqueChar.testData" />
+        <item itemvalue="TestNG.validParentheses.testData" />
+        <item itemvalue="TestNG.addDDLL.testData" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697135790367</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="W11 D4 Commit">
+      <option name="closed" value="true" />
+      <created>1697204411304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697204411304</updated>
+    </task>
+    <task id="LOCAL-00010" summary="W11 D5 Commit">
+      <option name="closed" value="true" />
+      <created>1697219198884</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697219198885</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +301,8 @@
     <MESSAGE value="W11 D2 Commit" />
     <MESSAGE value="W11 D3 Commit" />
     <MESSAGE value="W11 D4 Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="W11 D4 Commit" />
+    <MESSAGE value="W11 D5 Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="W11 D5 Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -358,18 +394,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java</url>
-          <line>30</line>
+          <line>33</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java</url>
-          <line>52</line>
+          <line>55</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day4/W11D4_LC819_MostCommonWord.java</url>
           <line>44</line>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/rotateLL.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/rotateLL.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/SingleLinkedList.java</url>
+          <line>234</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/mergeTwoLinkedList.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/validParentheses.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1_LC_387_firstUniqueChar.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/W12_D1_LC682_Baseball.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/reverseLL.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/reverseLL.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week10/day6/Node.java</url>
@@ -398,12 +479,32 @@
           </properties>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java</url>
+          <line>26</line>
+          <properties class="mandatoryHomeWork.week11.day2.W11D4_LC160_IntersectionLL" method="testData">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/validParentheses.java</url>
+          <line>62</line>
+          <properties class="mandatoryHomeWork.week11.day7.validParentheses">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="mandatoryHomeWork.week10.day6.SinglyLinkedList$Node" memberName="this$0" />
+        <PinnedItemInfo parentTag="mandatoryHomeWork.week11.day2.ListNode" memberName="next" />
         <PinnedItemInfo parentTag="mandatoryHomeWork.week10.day6.SinglyLinkedList$Node" memberName="next" />
+        <PinnedItemInfo parentTag="mandatoryHomeWork.week11.day2.ListNode" memberName="data" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

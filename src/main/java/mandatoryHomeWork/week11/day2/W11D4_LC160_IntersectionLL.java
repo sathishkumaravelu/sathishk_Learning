@@ -25,9 +25,12 @@ public class W11D4_LC160_IntersectionLL {
 
     @Test
     public void testData() {
-        ListNode head1 = new SingleLinkedList().add(new int[]{4, 1, 8, 4, 5});
-        ListNode head2 = new SingleLinkedList().add(new int[]{5, 6, 1, 8, 4, 5});
-
+        SingleLinkedList list1 = new SingleLinkedList();
+        list1.add(new int[]{4,1,8,4,5});
+        ListNode head1 = list1.head;
+        SingleLinkedList list2 = new SingleLinkedList();
+        list2.add(new int[]{5, 6, 1, 8, 4, 5});
+        ListNode head2 = list1.head;
         ListNode intersectionNode = getIntersectionNode(head1, head2);
         System.out.println(intersectionNode.data);
 

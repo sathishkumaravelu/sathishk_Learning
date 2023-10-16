@@ -1,4 +1,4 @@
-package mandatoryHomeWork.week11.day2;
+package mandatoryHomeWork.week11.day6;
 
 public class SingleLinkedList {
     public ListNode head;
@@ -225,7 +225,10 @@ public class SingleLinkedList {
 
     public ListNode addSecondListToFirstNodeTail(ListNode node1, ListNode node2) {
         ListNode currentNode = node1;
-        while (currentNode != null) {
+        ListNode previousNode = null;
+
+        while (currentNode.next != null) {
+            previousNode = currentNode;
             currentNode = currentNode.next;
         }
         currentNode.next = node2;
