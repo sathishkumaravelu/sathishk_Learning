@@ -1,4 +1,4 @@
-package mandatoryHomeWork.week12;
+package mandatoryHomeWork.week12.Day1;
 
 import org.testng.annotations.Test;
 

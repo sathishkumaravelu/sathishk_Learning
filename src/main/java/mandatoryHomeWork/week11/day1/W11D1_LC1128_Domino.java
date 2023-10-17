@@ -17,17 +17,16 @@ public class W11D1_LC1128_Domino {
         }
         int pair = 0;
         Map<List<Integer>,Integer> map = new HashMap<>();
-        for (int i = 0; i < dominoes.length; i++) {
+        for (int[] dominoe : dominoes) {
             List<Integer> list = new ArrayList<>();
             for (int j = 0; j < 2; j++) {
-                list.add(dominoes[i][j]);
+                list.add(dominoe[j]);
             }
-
-            if(map.containsKey(list)){
-                map.replace(list,1+map.get(list));
-                pair+=map.get(list);
-            }else{
-                map.put(list,0);
+            if (map.containsKey(list)) {
+                map.replace(list, 1 + map.get(list));
+                pair += map.get(list);
+            } else {
+                map.put(list, 0);
             }
         }
         return pair;

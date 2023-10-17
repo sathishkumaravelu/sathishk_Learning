@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44c59b98-ab53-49a2-9d21-6abf298143c6" name="Changes" comment="W11 D5 Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/Intersection_LL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/SingleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/cyclicImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/mergeTwoLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/reverseLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day6/rotateLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/Nodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/addDDLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day7/validParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1_LC_387_firstUniqueChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/RemoveDuplicate_MentorConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/W12_D1_LC682_Baseball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="44c59b98-ab53-49a2-9d21-6abf298143c6" name="Changes" comment="W12 D1 Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day2/W12D1_LC844_Backspace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day2/W12D2_LC2073_Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/SingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D4_LC160_IntersectionLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day1/W11D1_LC1128_Domino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day1/W11D1_LC1128_Domino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1_LC_387_firstUniqueChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1/Day1_LC_387_firstUniqueChar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/RemoveDuplicate_MentorConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1/RemoveDuplicate_MentorConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/W12_D1_LC682_Baseball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1/W12_D1_LC682_Baseball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,17 +78,33 @@
       <recent name="mandatoryHomeWork.week10.day4" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.reverseLL.testData">
-    <configuration name="Day1_LC_387_firstUniqueChar.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.W12D2_LC2073_Ticket.test">
+    <configuration name="W11D1_LC1128_Domino.testData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week12.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week11.day1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.Day1_LC_387_firstUniqueChar" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day1" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day1.W11D1_LC1128_Domino" />
+      <option name="METHOD_NAME" value="testData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="W12D11_LC844_Backspace.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="kumaravelu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatoryHomeWork.week12.Day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12.Day2" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.Day2.W12D11_LC844_Backspace" />
       <option name="METHOD_NAME" value="testData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -108,16 +113,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W12_D1_LC682_Baseball.test" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="W12D2_LC2073_Ticket.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week12.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week12.Day2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.W12_D1_LC682_Baseball" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12.Day2" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.Day2.W12D2_LC2073_Ticket" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -126,16 +131,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="addDDLL.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="W12D2_LC2073_Ticket.testData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day7.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week12.Day2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day7" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day7.addDDLL" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12.Day2" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.Day2.W12D2_LC2073_Ticket" />
       <option name="METHOD_NAME" value="testData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -144,35 +149,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="reverseLL.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="W12D2_LC2073_Ticket.timeRequiredToBuy" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kumaravelu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day6.*" />
+          <option name="PATTERN" value="mandatoryHomeWork.week12.Day2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day6" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day6.reverseLL" />
-      <option name="METHOD_NAME" value="testData" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="validParentheses.testData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="kumaravelu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatoryHomeWork.week11.day7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week11.day7" />
-      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week11.day7.validParentheses" />
-      <option name="METHOD_NAME" value="testData" />
+      <option name="PACKAGE_NAME" value="mandatoryHomeWork.week12.Day2" />
+      <option name="MAIN_CLASS_NAME" value="mandatoryHomeWork.week12.Day2.W12D2_LC2073_Ticket" />
+      <option name="METHOD_NAME" value="timeRequiredToBuy" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -182,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.reverseLL.testData" />
-        <item itemvalue="TestNG.W12_D1_LC682_Baseball.test" />
-        <item itemvalue="TestNG.Day1_LC_387_firstUniqueChar.testData" />
-        <item itemvalue="TestNG.validParentheses.testData" />
-        <item itemvalue="TestNG.addDDLL.testData" />
+        <item itemvalue="TestNG.W12D2_LC2073_Ticket.test" />
+        <item itemvalue="TestNG.W12D2_LC2073_Ticket.testData" />
+        <item itemvalue="TestNG.W12D2_LC2073_Ticket.timeRequiredToBuy" />
+        <item itemvalue="TestNG.W12D11_LC844_Backspace.testData" />
+        <item itemvalue="JUnit.W11D1_LC1128_Domino.testData" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697219198885</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="W12 D1 Commit">
+      <option name="closed" value="true" />
+      <created>1697482504461</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697482504461</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +297,8 @@
     <MESSAGE value="W11 D3 Commit" />
     <MESSAGE value="W11 D4 Commit" />
     <MESSAGE value="W11 D5 Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="W11 D5 Commit" />
+    <MESSAGE value="W12 D1 Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="W12 D1 Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,16 +369,6 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day1/W11D1_LC1128_Domino.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day1/W11D1_LC1128_Domino.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week11/day2/W11D2_MergeLL.java</url>
           <line>35</line>
           <option name="timeStamp" value="42" />
@@ -433,12 +419,12 @@
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1_LC_387_firstUniqueChar.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1/Day1_LC_387_firstUniqueChar.java</url>
           <line>22</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/W12_D1_LC682_Baseball.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day1/W12_D1_LC682_Baseball.java</url>
           <line>24</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
@@ -496,6 +482,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/mandatoryHomeWork/week12/Day2/W12D2_LC2073_Ticket.java</url>
+          <line>46</line>
+          <properties class="mandatoryHomeWork.week12.Day2.W12D2_LC2073_Ticket" method="test">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
