@@ -1,6 +1,7 @@
 package mandatoryHomeWork.week15.Day1;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class W15D1_LC1207_UniqueNoOccurance {
 
@@ -27,11 +28,9 @@ public class W15D1_LC1207_UniqueNoOccurance {
         for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        for (int i : map.values()) {
-            if (map.containsValue(i)) {
-                return false;
-            }
-        }
-        return true;
+        System.out.println(map);
+        HashSet<Integer> set = new HashSet<>(map.values());
+        System.out.println(set);
+        return set.size() == map.size();
     }
 }
